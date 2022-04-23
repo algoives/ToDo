@@ -20,6 +20,8 @@
 		455476722812563D0085AC46 /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455476712812563D0085AC46 /* ToDoItemTests.swift */; };
 		4554767428131A630085AC46 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554767328131A630085AC46 /* Location.swift */; };
 		45547676281327B40085AC46 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45547675281327B40085AC46 /* LocationTests.swift */; };
+		45547678281341780085AC46 /* ToDoItemStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45547677281341780085AC46 /* ToDoItemStoreTests.swift */; };
+		4554767A281344380085AC46 /* ToDoItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45547679281344380085AC46 /* ToDoItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		455476712812563D0085AC46 /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
 		4554767328131A630085AC46 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		45547675281327B40085AC46 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		45547677281341780085AC46 /* ToDoItemStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemStoreTests.swift; sourceTree = "<group>"; };
+		45547679281344380085AC46 /* ToDoItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				4554764B28123BCF0085AC46 /* Info.plist */,
 				4554766F2812552E0085AC46 /* ToDoItem.swift */,
 				4554767328131A630085AC46 /* Location.swift */,
+				45547679281344380085AC46 /* ToDoItemStore.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 				4554765428123BCF0085AC46 /* ToDoTests.swift */,
 				455476712812563D0085AC46 /* ToDoItemTests.swift */,
 				45547675281327B40085AC46 /* LocationTests.swift */,
+				45547677281341780085AC46 /* ToDoItemStoreTests.swift */,
 			);
 			path = ToDoTests;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 				4554763E28123BCD0085AC46 /* AppDelegate.swift in Sources */,
 				4554767428131A630085AC46 /* Location.swift in Sources */,
 				455476702812552E0085AC46 /* ToDoItem.swift in Sources */,
+				4554767A281344380085AC46 /* ToDoItemStore.swift in Sources */,
 				4554764028123BCD0085AC46 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45547678281341780085AC46 /* ToDoItemStoreTests.swift in Sources */,
 				455476722812563D0085AC46 /* ToDoItemTests.swift in Sources */,
 				45547676281327B40085AC46 /* LocationTests.swift in Sources */,
 				4554765528123BCF0085AC46 /* ToDoTests.swift in Sources */,
