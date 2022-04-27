@@ -15,7 +15,7 @@ class ToDoItemsListViewControllerTest: XCTestCase {
 
     override func setUpWithError() throws {
       let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        sut = try XCTUnwrap(storyboard.instantiateInitialViewController() as? ToDoItemsListViewController)
+        sut = try XCTUnwrap(storyboard.instantiateViewController(withIdentifier:"ToDoItemsListViewController") as? ToDoItemsListViewController)
         toDoItemStoreMock = ToDoItemStoreProtocolMock()
         sut.toDoItemStore = toDoItemStoreMock
         sut.loadViewIfNeeded()
@@ -120,5 +120,23 @@ class ToDoItemsListViewControllerTest: XCTestCase {
         
         XCTAssertEqual(delegateMock.selectToDoItemReceivedArguments?.item, toDoItem)
     }
+    
+    func test_navigationBarButton_shouldCallDelegate() throws {
+        let delegateMock = ToDoItemsListViewControllerProtocolMock()
+        sut.delegate = delegateMock
+        
+        let addButton = sut.navigationItem.rightBarButtonItem
+        let target = try XCTUnwrap(addButton?.target)
+        
+        let action = try XCTUnwrap(addButton?.action)
+        _ = target.perform(action, with: addButton)
+        
+        XCTAssertEqual(delegateMock.addToDoItemCallCount, 1)
+    }
+    
+    func test_dateFormatter_shouldNotBeNone() {
+        XCTAssertNotEqual(sut.dateFormatter.dateStyle, .none)
+    }
+    
     
 }

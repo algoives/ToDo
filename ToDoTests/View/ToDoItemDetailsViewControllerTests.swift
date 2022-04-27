@@ -106,6 +106,36 @@ class ToDoItemDetailsViewControllerTests: XCTestCase {
         
         XCTAssertEqual(center.latitude, latitude, accuracy: 0.000_01)
         
-        XCTAssertEqual(center.longitude, longitude, accuracy: 0.000_01)    }
+        XCTAssertEqual(center.longitude, longitude, accuracy: 0.000_01)
+        
+    }
     
+    func test_settingToDoItem_shouldUdateButtonState() {
+        var toDoItem = ToDoItem(title: "dummy title")
+        toDoItem.done = true
+        
+        sut.toDoItem = toDoItem
+        
+        XCTAssertFalse(sut.doneButton.isEnabled)
+    }
+    
+    func test_settingToDoItem_whenItemNotDone_shouldUdateButtonState() {
+        let toDoItem = ToDoItem(title: "dummy title")
+        
+        
+        sut.toDoItem = toDoItem
+        
+        XCTAssertTrue(sut.doneButton.isEnabled)
+    }
+    
+    func test_sendingButtonAction_shouldCheckItem(){
+        let toDoItem  = ToDoItem(title: "dummy title")
+        sut.toDoItem = toDoItem
+        let storeMock = ToDoItemStoreProtocolMock()
+        sut.toDoItemStore = storeMock
+        
+        sut.doneButton.sendActions(for: .touchUpInside)
+        
+        XCTAssertEqual(storeMock.checkLastCallArgument, toDoItem)
+    }
 }

@@ -26,10 +26,18 @@ class ToDoItemDetailsViewController: UIViewController {
             if let coordinate =  toDoItem?.location?.coordinate{
                 mapView.setCenter(CLLocationCoordinate2D( latitude: coordinate.latitude, longitude: coordinate.longitude),animated: false)
             }
+            
+            doneButton.isEnabled = (toDoItem?.done == false)
         }
     }
     
+    var toDoItemStore: ToDoItemStoreProtocol?
   
     
+    @IBAction func checkItem(_ sender: UIButton) {
+        if let toDoItem = toDoItem {
+            toDoItemStore?.check(toDoItem)
+        }
+    }
     
 }

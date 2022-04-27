@@ -10,6 +10,7 @@ import Combine
 
 protocol ToDoItemsListViewControllerProtocol {
     func selectTodoItem(_ viewController: UIViewController, item: ToDoItem)
+    func addToDoItem(_ viewController: UIViewController)
 }
 
 class ToDoItemsListViewController: UIViewController {
@@ -26,6 +27,7 @@ class ToDoItemsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        dateFormatter.dateStyle = .short
         // Do any additional setup after loading the view.
         datasource = UITableViewDiffableDataSource<Section, ToDoItem>(tableView: tableView, cellProvider: { [weak self] tableView, indexPath, item in
             let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoItemCell", for: indexPath) as! ToDoItemCell
@@ -45,6 +47,9 @@ class ToDoItemsListViewController: UIViewController {
        
         tableView.delegate = self
         
+        let addItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(add(_ :)))
+        navigationItem.rightBarButtonItem = addItem
+        
     }
     
     private func update(with items: [ToDoItem ]){
@@ -57,6 +62,10 @@ class ToDoItemsListViewController: UIViewController {
         sanapshot.appendItems(items.filter({$0.done}),toSection: .done
         )
         datasource?.apply(sanapshot)
+    }
+    
+    @objc func add(_ sender: UIBarButtonItem){
+        delegate?.addToDoItem(self)
     }
     
 

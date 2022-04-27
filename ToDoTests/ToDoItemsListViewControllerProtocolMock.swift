@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 class ToDoItemsListViewControllerProtocolMock: ToDoItemsListViewControllerProtocol{
     
+    var addToDoItemCallCount = 0
+    
     var selectToDoItemReceivedArguments:(viewController: UIViewController, item: ToDoItem)?
     
     
@@ -18,6 +20,7 @@ class ToDoItemsListViewControllerProtocolMock: ToDoItemsListViewControllerProtoc
         selectToDoItemReceivedArguments = (viewController, item)
     }
     
-    
-    
+    func addToDoItem(_ viewController: UIViewController) {
+        addToDoItemCallCount += 1
+    }
 }

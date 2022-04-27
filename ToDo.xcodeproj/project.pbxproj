@@ -32,6 +32,21 @@
 		4554768E28160D550085AC46 /* ToDoItemsListViewControllerProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554768D28160D550085AC46 /* ToDoItemsListViewControllerProtocolMock.swift */; };
 		455476902816217B0085AC46 /* ToDoItemDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554768F2816217B0085AC46 /* ToDoItemDetailsViewControllerTests.swift */; };
 		45547692281627AB0085AC46 /* ToDoItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45547691281627AB0085AC46 /* ToDoItemDetailsViewController.swift */; };
+		45547695281745610085AC46 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 45547694281745610085AC46 /* ViewInspector */; };
+		45547697281745F70085AC46 /* ToDoItemInputViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45547696281745F70085AC46 /* ToDoItemInputViewTests.swift */; };
+		455476992817473D0085AC46 /* ToDoItemInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455476982817473D0085AC46 /* ToDoItemInputView.swift */; };
+		4554769B2817488A0085AC46 /* ToDoItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554769A2817488A0085AC46 /* ToDoItemData.swift */; };
+		4554769D28177CAB0085AC46 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554769C28177CAB0085AC46 /* APIClient.swift */; };
+		4554769F28177D940085AC46 /* APIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4554769E28177D940085AC46 /* APIClientMock.swift */; };
+		455476A12817AA110085AC46 /* ToDoItemInputViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455476A02817AA100085AC46 /* ToDoItemInputViewDelegate.swift */; };
+		455476A9281839E90085AC46 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455476A8281839E90085AC46 /* APIClientTests.swift */; };
+		455476AB28183C640085AC46 /* GeoCoderProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455476AA28183C640085AC46 /* GeoCoderProtocolMock.swift */; };
+		455476AD28185D250085AC46 /* URLSessionProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455476AC28185D250085AC46 /* URLSessionProtocolMock.swift */; };
+		455476AF28187C7D0085AC46 /* AppSetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455476AE28187C7D0085AC46 /* AppSetupTests.swift */; };
+		455476B1281883B10085AC46 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455476B0281883B10085AC46 /* AppCoordinator.swift */; };
+		455476B32818A2CC0085AC46 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455476B22818A2CC0085AC46 /* AppCoordinatorTests.swift */; };
+		455476B52818A4670085AC46 /* NavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455476B42818A4670085AC46 /* NavigationControllerMock.swift */; };
+		455476B72818B6830085AC46 /* ViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455476B62818B6830085AC46 /* ViewControllerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +96,20 @@
 		4554768D28160D550085AC46 /* ToDoItemsListViewControllerProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemsListViewControllerProtocolMock.swift; sourceTree = "<group>"; };
 		4554768F2816217B0085AC46 /* ToDoItemDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemDetailsViewControllerTests.swift; sourceTree = "<group>"; };
 		45547691281627AB0085AC46 /* ToDoItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemDetailsViewController.swift; sourceTree = "<group>"; };
+		45547696281745F70085AC46 /* ToDoItemInputViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemInputViewTests.swift; sourceTree = "<group>"; };
+		455476982817473D0085AC46 /* ToDoItemInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoItemInputView.swift; path = ToDo/Model/Views/ToDoItemInputView.swift; sourceTree = SOURCE_ROOT; };
+		4554769A2817488A0085AC46 /* ToDoItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemData.swift; sourceTree = "<group>"; };
+		4554769C28177CAB0085AC46 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4554769E28177D940085AC46 /* APIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientMock.swift; sourceTree = "<group>"; };
+		455476A02817AA100085AC46 /* ToDoItemInputViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemInputViewDelegate.swift; sourceTree = "<group>"; };
+		455476A8281839E90085AC46 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		455476AA28183C640085AC46 /* GeoCoderProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCoderProtocolMock.swift; sourceTree = "<group>"; };
+		455476AC28185D250085AC46 /* URLSessionProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocolMock.swift; sourceTree = "<group>"; };
+		455476AE28187C7D0085AC46 /* AppSetupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetupTests.swift; sourceTree = "<group>"; };
+		455476B0281883B10085AC46 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		455476B22818A2CC0085AC46 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		455476B42818A4670085AC46 /* NavigationControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerMock.swift; sourceTree = "<group>"; };
+		455476B62818B6830085AC46 /* ViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45547695281745610085AC46 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,14 +168,9 @@
 				4554764628123BCF0085AC46 /* Assets.xcassets */,
 				4554764828123BCF0085AC46 /* LaunchScreen.storyboard */,
 				4554764B28123BCF0085AC46 /* Info.plist */,
-				4554766F2812552E0085AC46 /* ToDoItem.swift */,
-				4554767328131A630085AC46 /* Location.swift */,
-				4554767B2814A64F0085AC46 /* Coordinate.swift */,
-				45547679281344380085AC46 /* ToDoItemStore.swift */,
+				455476A2281836A20085AC46 /* Model */,
 				4554767D2814B74D0085AC46 /* FileManagerExtension.swift */,
-				455476852814C3820085AC46 /* ToDoItemsListViewController.swift */,
-				455476892815E7220085AC46 /* ToDoItemCell.swift */,
-				45547691281627AB0085AC46 /* ToDoItemDetailsViewController.swift */,
+				455476B0281883B10085AC46 /* AppCoordinator.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -153,15 +178,16 @@
 		4554765328123BCF0085AC46 /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
-				4554765428123BCF0085AC46 /* ToDoTests.swift */,
-				455476712812563D0085AC46 /* ToDoItemTests.swift */,
-				45547675281327B40085AC46 /* LocationTests.swift */,
-				45547677281341780085AC46 /* ToDoItemStoreTests.swift */,
-				455476832814C2E50085AC46 /* ToDoItemsListViewControllerTest.swift */,
-				455476872815244B0085AC46 /* ToDoItemStoreProtocolMock.swift */,
-				4554768B2815ED270085AC46 /* ToDoItemCellTests.swift */,
+				455476A72818380C0085AC46 /* Networking */,
 				4554768D28160D550085AC46 /* ToDoItemsListViewControllerProtocolMock.swift */,
-				4554768F2816217B0085AC46 /* ToDoItemDetailsViewControllerTests.swift */,
+				455476A6281837B00085AC46 /* View */,
+				455476A5281837970085AC46 /* Model */,
+				455476872815244B0085AC46 /* ToDoItemStoreProtocolMock.swift */,
+				455476A02817AA100085AC46 /* ToDoItemInputViewDelegate.swift */,
+				455476AE28187C7D0085AC46 /* AppSetupTests.swift */,
+				455476B22818A2CC0085AC46 /* AppCoordinatorTests.swift */,
+				455476B42818A4670085AC46 /* NavigationControllerMock.swift */,
+				455476B62818B6830085AC46 /* ViewControllerMock.swift */,
 			);
 			path = ToDoTests;
 			sourceTree = "<group>";
@@ -173,6 +199,72 @@
 				4554766028123BCF0085AC46 /* ToDoUITestsLaunchTests.swift */,
 			);
 			path = ToDoUITests;
+			sourceTree = "<group>";
+		};
+		455476A2281836A20085AC46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4554767B2814A64F0085AC46 /* Coordinate.swift */,
+				45547679281344380085AC46 /* ToDoItemStore.swift */,
+				4554767328131A630085AC46 /* Location.swift */,
+				4554769A2817488A0085AC46 /* ToDoItemData.swift */,
+				4554766F2812552E0085AC46 /* ToDoItem.swift */,
+				455476A3281837120085AC46 /* Views */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		455476A3281837120085AC46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				455476982817473D0085AC46 /* ToDoItemInputView.swift */,
+				45547691281627AB0085AC46 /* ToDoItemDetailsViewController.swift */,
+				455476892815E7220085AC46 /* ToDoItemCell.swift */,
+				455476852814C3820085AC46 /* ToDoItemsListViewController.swift */,
+				455476A42818375E0085AC46 /* Networking */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		455476A42818375E0085AC46 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4554769C28177CAB0085AC46 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		455476A5281837970085AC46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45547677281341780085AC46 /* ToDoItemStoreTests.swift */,
+				45547675281327B40085AC46 /* LocationTests.swift */,
+				455476712812563D0085AC46 /* ToDoItemTests.swift */,
+				4554765428123BCF0085AC46 /* ToDoTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		455476A6281837B00085AC46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4554768F2816217B0085AC46 /* ToDoItemDetailsViewControllerTests.swift */,
+				45547696281745F70085AC46 /* ToDoItemInputViewTests.swift */,
+				4554768B2815ED270085AC46 /* ToDoItemCellTests.swift */,
+				455476832814C2E50085AC46 /* ToDoItemsListViewControllerTest.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		455476A72818380C0085AC46 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4554769E28177D940085AC46 /* APIClientMock.swift */,
+				455476A8281839E90085AC46 /* APIClientTests.swift */,
+				455476AA28183C640085AC46 /* GeoCoderProtocolMock.swift */,
+				455476AC28185D250085AC46 /* URLSessionProtocolMock.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +301,9 @@
 				4554765228123BCF0085AC46 /* PBXTargetDependency */,
 			);
 			name = ToDoTests;
+			packageProductDependencies = (
+				45547694281745610085AC46 /* ViewInspector */,
+			);
 			productName = ToDoTests;
 			productReference = 4554765028123BCF0085AC46 /* ToDoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -263,6 +358,9 @@
 				Base,
 			);
 			mainGroup = 4554763128123BCD0085AC46;
+			packageReferences = (
+				45547693281745610085AC46 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 4554763B28123BCD0085AC46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -307,7 +405,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4554767C2814A64F0085AC46 /* Coordinate.swift in Sources */,
+				4554769D28177CAB0085AC46 /* APIClient.swift in Sources */,
 				4554764228123BCD0085AC46 /* ViewController.swift in Sources */,
+				455476992817473D0085AC46 /* ToDoItemInputView.swift in Sources */,
 				4554768A2815E7220085AC46 /* ToDoItemCell.swift in Sources */,
 				45547692281627AB0085AC46 /* ToDoItemDetailsViewController.swift in Sources */,
 				4554763E28123BCD0085AC46 /* AppDelegate.swift in Sources */,
@@ -315,6 +415,8 @@
 				455476702812552E0085AC46 /* ToDoItem.swift in Sources */,
 				4554767E2814B74D0085AC46 /* FileManagerExtension.swift in Sources */,
 				455476862814C3820085AC46 /* ToDoItemsListViewController.swift in Sources */,
+				4554769B2817488A0085AC46 /* ToDoItemData.swift in Sources */,
+				455476B1281883B10085AC46 /* AppCoordinator.swift in Sources */,
 				4554767A281344380085AC46 /* ToDoItemStore.swift in Sources */,
 				4554764028123BCD0085AC46 /* SceneDelegate.swift in Sources */,
 			);
@@ -325,14 +427,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				45547678281341780085AC46 /* ToDoItemStoreTests.swift in Sources */,
+				455476A12817AA110085AC46 /* ToDoItemInputViewDelegate.swift in Sources */,
 				455476722812563D0085AC46 /* ToDoItemTests.swift in Sources */,
+				455476B32818A2CC0085AC46 /* AppCoordinatorTests.swift in Sources */,
+				455476AF28187C7D0085AC46 /* AppSetupTests.swift in Sources */,
+				455476AD28185D250085AC46 /* URLSessionProtocolMock.swift in Sources */,
 				455476882815244B0085AC46 /* ToDoItemStoreProtocolMock.swift in Sources */,
 				45547676281327B40085AC46 /* LocationTests.swift in Sources */,
+				455476B72818B6830085AC46 /* ViewControllerMock.swift in Sources */,
 				4554765528123BCF0085AC46 /* ToDoTests.swift in Sources */,
 				455476902816217B0085AC46 /* ToDoItemDetailsViewControllerTests.swift in Sources */,
 				4554768C2815ED270085AC46 /* ToDoItemCellTests.swift in Sources */,
 				455476842814C2E50085AC46 /* ToDoItemsListViewControllerTest.swift in Sources */,
+				45547697281745F70085AC46 /* ToDoItemInputViewTests.swift in Sources */,
+				455476A9281839E90085AC46 /* APIClientTests.swift in Sources */,
 				4554768E28160D550085AC46 /* ToDoItemsListViewControllerProtocolMock.swift in Sources */,
+				4554769F28177D940085AC46 /* APIClientMock.swift in Sources */,
+				455476AB28183C640085AC46 /* GeoCoderProtocolMock.swift in Sources */,
+				455476B52818A4670085AC46 /* NavigationControllerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +778,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45547693281745610085AC46 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45547694281745610085AC46 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45547693281745610085AC46 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4554763228123BCD0085AC46 /* Project object */;
 }
